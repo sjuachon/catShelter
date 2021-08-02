@@ -24,7 +24,7 @@ function getContentType(url){
 
 module.exports = (req, res)=>{
   const pathname = url.parse(req.url).pathname;
-  if(pathname.startsWith('/content')&& req.method==='GET'){
+  if(pathname.startsWith('/content') && req.method==='GET'){
 
     if(pathname.endsWith('png') || pathname.endsWith('ico') || pathname.endsWith('jpg') || pathname.endsWith('jpeg')){
 
